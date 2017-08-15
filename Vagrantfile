@@ -3,6 +3,8 @@
 
 Vagrant.configure("2") do |config|
 
+  config.vm.boot_timeout = 600
+
   
   #create a ansible mgmt node
   config.vm.define :mgmt do |mgmt_config|
